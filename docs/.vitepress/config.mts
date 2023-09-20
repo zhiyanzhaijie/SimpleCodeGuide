@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "极简编程入门",
   description: "编程入门教程文档",
+  base: "/SimpleCodeGuide/",
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
