@@ -1,6 +1,6 @@
 /docs/.vitepress/cache/
 node_modules/
 
-*.yaml
+# *.yaml
 
 .vitepress
