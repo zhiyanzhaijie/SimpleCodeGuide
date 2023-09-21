@@ -7,8 +7,8 @@ hero:
   text: "技术提纲"
   tagline: 让计算机成为你的生产力
   image: 
-    src: /logo.png
-    alt: 劳动
+    src: /home.svg
+    alt: code, sure the hammer and sickle
   actions:
     - theme: brand
       text: Markdown Examples
