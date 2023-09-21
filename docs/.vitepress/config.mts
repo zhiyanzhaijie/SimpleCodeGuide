@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "/public/logo.png",
+    logo: "/communisium.png",
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Powered by VitePress'
@@ -35,7 +35,7 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/zhiyanzhaijie/SimpleCodeGuide' }
     ],
     docFooter: {
       prev: "上一篇",
