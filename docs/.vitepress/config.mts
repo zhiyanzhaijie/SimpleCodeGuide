@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/SimpleCodeGuide/",
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', href: '/SimpleCodeGuide/logo.png' }],
     // ['meta', { name: 'theme-color', content: '#5f67ee' }],
     // ['meta', { name: 'og:type', content: 'website' }],
     // ['meta', { name: 'og:locale', content: 'en' }],
