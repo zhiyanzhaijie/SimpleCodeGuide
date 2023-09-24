@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
-import basicNav from './nav/basic'
-import projectNav from './nav/project'
-import rootNav from './nav/root'
+import basicNav from '../router/nav/basic'
+import projectNav from '../router/nav/project'
+import rootNav from '../router/nav/root'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "极简编程入门",
@@ -31,6 +32,7 @@ export default defineConfig({
       rootNav
     ],
     sidebar: {
+      // TODO: 拆到router下
       "/default/": [
         {
           text: '示例',
