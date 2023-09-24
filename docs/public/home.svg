@@ -34,11 +34,34 @@
           &gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;&lt;&gt;&lt;/&gt;&#160;
         </tspan>
        </textPath>
-      <animate attributeName="fill"
+       <animate attributeName="fill"
         values="#cdcdcd; #cdcdcd; red; #cdcdcd"
         dur="10s" keyTimes="0; .89; .9; 1"
         repeatCount="indefinite" />
-      <animateTransform
+       <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="
+        0 250 250;
+        0 250 250;
+        4 250 250;
+        -4 250 250;
+        0 250 250;
+        "
+        dur="10s"
+        keyTimes="
+        0; .89; .92; .95; 1"
+        repeatCount="indefinite" />
+      </text>
+      <text dy="30" font-size="15" fill="none">
+       <textPath href="#replace">
+          Ein Gespenst geht um in Europa – das Gespenst des Kommunismus. Alle Mächte des alten Europa haben sich zu einer heiligen Hetzjagd gegen dies Gespenst verbündet, der Papst und der Czar, Metternich und Guizot, französische Radikale und deutsche Polizisten.
+       </textPath>
+       <animate attributeName="fill"
+        values="transparent; transparent; red; transparent"
+        dur="10s" keyTimes="0; .89; .9; 1"
+        repeatCount="indefinite" />
+       <animateTransform
         attributeName="transform"
         type="rotate"
         values="
