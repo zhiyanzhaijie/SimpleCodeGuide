@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
-
+import basicNav from './nav/basic'
+import projectNav from './nav/project'
+import rootNav from './nav/root'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "极简编程入门",
@@ -8,36 +10,25 @@ export default defineConfig({
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: '/SimpleCodeGuide/logo.png' }],
-    // ['meta', { name: 'theme-color', content: '#5f67ee' }],
-    // ['meta', { name: 'og:type', content: 'website' }],
-    // ['meta', { name: 'og:locale', content: 'en' }],
-    // ['meta', { name: 'og:site_name', content: 'VitePress' }],
-    [
-      'script',
-      {
-        src: 'https://cdn.usefathom.com/script.js',
-        'data-site': 'AZBRSFGG',
-        'data-spa': 'auto',
-        defer: ''
-      }
-    ]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.png",
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/zhiyanzhaijie/SimpleCodeGuide' }
+    ],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Powered by VitePress'
     },
+    docFooter: {
+      prev: "上一节",
+      next: "下一节"
+    },
     nav: [
-      { text: '首页', link: '/' },
-      {
-        text: '基础',
-        items: [
-          { text: 'MarkDown', link: '/basic/markdown' }
-        ]
-      },
-      { text: '示例', link: '/default/markdown-examples' }
+      basicNav,
+      projectNav,
+      rootNav
     ],
     sidebar: {
       "/default/": [
@@ -50,19 +41,21 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/zhiyanzhaijie/SimpleCodeGuide' }
-    ],
-    docFooter: {
-      prev: "上一篇",
-      next: "下一篇"
-    }
+    // vite: {
+    //   resolve: {
+    //     alias: {
+    //       "~/": "/docs/"
+    //     }
+    //   }
+    // },
+    // locales: {
+    //   "/": {
+    //     lang: "zh-CN",
+    //     title: "中文啦",
+    //     description: "asdfasdfsadf"
+    //   }
+    // }
+
   },
-  // locales: {
-  //   "/": {
-  //     lang: "zh-CN",
-  //     title: "中文啦",
-  //     description: "asdfasdfsadf"
-  //   }
-  // }
+
 })
