@@ -14,14 +14,14 @@
       96.2588 141.802 0 260.543 0C379.284 0 475.543 96.2588 475.543 215ZM263 391C359.65 391
       438 312.65 438 216C438 119.35 359.65 41 263 41C166.35 41 88 119.35 88 216C88 312.65
       166.35 391 263 391Z" />
-      <text dx="0" font-size="24" font-weight="500" fill="#cdcdcd">
+      <text dx="0" font-size="18" fill="none">
        <textPath href="#replace">
         &#160;&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;&#160;&#160;&#160;&#160;
         /&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;&#160;&#160;&#160;&#160;
         /&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;/&#160;
         <tspan font-size="12">
         ......&#160;
-        !&#160;&#160;}&#160;&#160;_&#160;&#160;&amp;&amp;&#160;&#160;.&#160;&#160;
+        &amp;&#160;&#160;.&#160;&#160;
         ==&#160;&#160;==&#160;&#160;}&#160;&#160;[&#160;&#160;&lt;&#160;&#160;[&#160;&#160;^&#160;&#160;.&#160;&#160;&amp;&amp;&#160;&#160;&amp;&#160;&#160;&amp;&#160;&#160;~&#160;&#160;||&#160;&#160;]
         &#160;........
         </tspan>
@@ -53,7 +53,7 @@
         0; .89; .92; .95; 1"
         repeatCount="indefinite" />
       </text>
-      <text dy="30" font-size="15" fill="none">
+      <text dy="24" font-size="13" fill="none">
        <textPath href="#replace">
           Ein Gespenst geht um in Europa – das Gespenst des Kommunismus. Alle Mächte des alten Europa haben sich zu einer heiligen Hetzjagd gegen dies Gespenst verbündet, der Papst und der Czar, Metternich und Guizot, französische Radikale und deutsche Polizisten.
        </textPath>
