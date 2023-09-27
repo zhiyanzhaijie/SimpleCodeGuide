@@ -78,5 +78,5 @@ outline: deep
   > 
   > [Markdown 中文教程](https://markdown.com.cn/)
 
-  当然，本站也提供了实现部分demo的视频--[Markdown Demo](http://localhost:5173/SimpleCodeGuide/basic/tool/)。如果你的电脑已经安装好了[Visiual Studio Code](http://localhost:5173/SimpleCodeGuide/basic/tool/)此类编辑器，配合食用更佳。
+  当然，本站也提供了实现部分demo的视频--[Markdown Demo](https://www.bilibili.com/)。如果你的电脑已经安装好了[Visiual Studio Code](https://www.bilibili.com/)此类编辑器，配合食用更佳。
   
