@@ -116,4 +116,5 @@ nvm use 18.18.0
 
 ## 视频演示
 
-  敬请期待。
+- B站  
+   [工具篇ex - Nodejs环境安装](https://www.bilibili.com/video/BV1xw411y74r/)

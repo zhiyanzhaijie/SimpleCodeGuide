@@ -87,7 +87,7 @@ outline: deep
 
 - **技术博客**  
   <br />
-
+  
   正如本站，当你点击站点首页右上角的**github图标**时可进入本站的开源仓库。`markdown`是该站的核心语言，效果也如你所见。
 
 ## 如何使用Markdown
@@ -102,3 +102,8 @@ outline: deep
 
   当然，本站也提供了实现部分demo的视频--[Markdown Demo](https://www.bilibili.com/)。如果你的电脑已经安装好了[Visiual Studio Code](https://www.bilibili.com/)此类编辑器，配合食用更佳。
   
+  b站码率控制在6000以下会发生什么
+  
+  2550*1080
+
+  有没有合适的解决方案
