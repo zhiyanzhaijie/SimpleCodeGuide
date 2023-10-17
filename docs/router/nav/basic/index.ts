@@ -7,6 +7,10 @@ const basicNav = {
         {
           text: 'MarkDown',
           link: '/basic/tool/markdown'
+        },
+        {
+          text: 'Git',
+          link: '/basic/tool/git'
         }
       ]
     },

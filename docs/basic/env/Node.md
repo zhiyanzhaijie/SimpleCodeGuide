@@ -63,7 +63,7 @@ outline: deep
 安装完后，打开终端`powershell`(如果你不知道如何打开，百度)，输入以下命令并回车，如果输出了版本信息则安装成功。
 
 ```powershell
-  nvm -v
+>  nvm -v
 ```
 
 - **nvm管理node**。
@@ -97,17 +97,17 @@ nvm use 18.18.0
 - **`npm`命令**。
   ::: code-group
 
-    ```shell [执行脚本]
-      npm run ...
+    ```powershell [执行脚本]
+    >  npm run ...
     ```
 
-    ```shell [安装、卸载依赖]
-    npm install ... 
-    npm uninstall ...
+    ```powershell [安装、卸载依赖]
+    > npm install ...
+    > npm uninstall ...
     ```
 
-    ```shell [更多]
-      参见官网
+    ```powershell [更多]
+    >  参见官网
     ```
 
   :::

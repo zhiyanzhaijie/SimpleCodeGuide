@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import basicNav from '../router/nav/basic'
 import projectNav from '../router/nav/project'
 import rootNav from '../router/nav/root'
+import toolSiders from '../router/sider/basic/tool'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -41,7 +42,8 @@ export default defineConfig({
             { text: 'Runtime API Examples', link: '/default/api-examples' }
           ]
         }
-      ]
+      ],
+      "/basic/": toolSiders
     },
     // vite: {
     //   resolve: {
