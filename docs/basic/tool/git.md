@@ -114,8 +114,8 @@ outline: deep
  # （可选二）直接克隆已有的git远程仓库的代码到本地
  > git clone [$远程仓库的网络地址]
  #  或（可选二）只克隆已有仓库指定分支的代码到本地
- > git clone -b [$分支名]
- > git clone -b [$分支名] [$指定本地目录] # 多一个本地目录的指定，作用自己尝试
+ > git clone -b [$分支名] [$远程仓库的网络地址]
+ > git clone -b [$分支名] [$远程仓库的网络地址] [$指定本地目录] # 多一个本地目录的指定，作用自己尝试
  ```
 
  ``` powershell [④ 连接git远程仓库]
@@ -152,7 +152,7 @@ outline: deep
   
 如果你疲于重复地输入账户密码，请使用`ssh`密钥（参见GitHub文档——[通过 SSH 连接到 GitHub](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh)）将你的电脑与git任意平台进行绑定。在绑定之后，`ssh`作为你的钥匙，访问远程仓库就非常便捷啦。
   
-当然，上述[视频](https://www.bilibili.com/video/BV1Uu4y1a7my/)中也实现了流程示例。
+当然，上述[视频](https://www.bilibili.com/video/BV1Uu4y1a7my/?p=2)中也实现了流程示例。
 
   ::: code-group
 
@@ -173,6 +173,16 @@ outline: deep
 
   :::
 
+::: warning 开始
+好了，配置完以上内容，让我们开始模拟一次团队开发吧。
+  
+视频演示可见[Git开发模拟 - 工具篇](https://www.bilibili.com/video/BV1Uu4y1a7my?p=3)
+:::
+
 ## Git趣闻
 
-## Git和Git平台
+  `Git`工具的诞生离不开它的发起人`Linus`（大名鼎鼎的Linux系统之父）。在Git诞生以前，有一个非常知名的版本管理工具叫`BitKeeper`, Linux系统的开发使用的也是它。  
+
+  但由于`Bitkeeper`是一款收费的商业服务软件，Linux这款著名的开源项目在开发时，处处受限。 于是，Linus便牵头开发了自己的版本管理工具。  
+
+  感谢`Bitkeeper`。
