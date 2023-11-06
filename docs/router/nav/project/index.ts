@@ -7,6 +7,10 @@ const projectNav = {
         {
           text: "概况",
           link: "/project/dev/"
+        }, 
+        {
+          text: "Web开发",
+          link: '/project/dev/web.md'
         }
       ]
     },

@@ -3,6 +3,8 @@ import basicNav from '../router/nav/basic'
 import projectNav from '../router/nav/project'
 import rootNav from '../router/nav/root'
 import toolSiders from '../router/sider/basic/tool'
+import devSiders from '../router/sider/project/dev'
+import feSiders from '../router/sider/project/frontEnd'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -43,7 +45,9 @@ export default defineConfig({
           ]
         }
       ],
-      "/basic/": toolSiders
+      "/basic/": toolSiders,
+      "/project/dev/": devSiders,
+      "/project/frontEnd/": feSiders
     },
     // vite: {
     //   resolve: {
