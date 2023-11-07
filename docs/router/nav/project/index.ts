@@ -18,6 +18,10 @@ const projectNav = {
       text: "前端 FrontEnd",
       items: [
         {
+          text: "大纲",
+          link: "/project/frontEnd/index.md"
+        },
+        {
           text: "HTML",
           link: "/project/frontEnd/html/"
         }

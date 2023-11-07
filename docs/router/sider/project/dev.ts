@@ -4,7 +4,7 @@ const devSiders = [
     items: [
       {
         text: '初见编程',
-        link: '/project/dev/index'
+        link: '/project/dev/index.md'
       },
       {
         text: 'Web开发',
