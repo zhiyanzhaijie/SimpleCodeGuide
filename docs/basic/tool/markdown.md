@@ -100,5 +100,5 @@ outline: deep
   >
   > [Markdown 中文教程](https://markdown.com.cn/)
 
-  当然，本站也提供了实现部分demo的视频--[Markdown Demo](https://www.bilibili.com/)。如果你的电脑已经安装好了[Visiual Studio Code](https://code.visualstudio.com/)此类编辑器，配合食用更佳。
+  当然，本站也提供了实现部分demo的视频--[Markdown语法陪玩](https://www.bilibili.com/video/BV1dQ4y1t76S)。如果你的电脑已经安装好了[Visiual Studio Code](https://code.visualstudio.com/)此类编辑器，配合食用更佳。
   
