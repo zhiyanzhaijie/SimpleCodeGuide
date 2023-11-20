@@ -9,7 +9,7 @@ outline: deep
 ## HTML的闯关游戏
 
   游戏链接：
-  [freeCodeCamp -- HTML]([https://freeCodeCamp](https://www.freecodecamp.org/chinese/learn/2022/responsive-web-design/))
+  [freeCodeCamp -- HTML](https://www.freecodecamp.org/chinese/learn/2022/responsive-web-design/)
 
 ## 陪玩视频
 
