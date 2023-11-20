@@ -21,10 +21,6 @@ const projectNav = {
           text: "大纲",
           link: "/project/frontEnd/index.md"
         },
-        {
-          text: "HTML",
-          link: "/project/frontEnd/html/"
-        }
       ]
     },
     {

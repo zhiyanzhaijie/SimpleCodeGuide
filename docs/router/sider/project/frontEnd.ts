@@ -8,15 +8,15 @@ const feSiders = [
       },
       {
         text: 'HTML',
-        link: '/project/frontEnd/html'
+        link: '/project/frontEnd/html/index.md'
       },
       {
         text: 'CSS',
-        link: '/project/frontEnd/css'
+        link: '/project/frontEnd/css/index.md'
       },
       {
         text: 'JavaScript',
-        link: '/project/frontEnd/javaScript',
+        link: '/project/frontEnd/javaScript/index.md',
       }
     ]
   }
