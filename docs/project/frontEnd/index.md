@@ -47,7 +47,7 @@ outline: deep
 
 - **js重点**
 
-  js的内置对象, 数据结构和基础算法。同时直接跳入js的完全版——`typeScript`
+  js的内置对象, 数据结构和基础算法。同时直接跳入js的拓展版——`TypeScript`
 
 - **框架开发**
 
