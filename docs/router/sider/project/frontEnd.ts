@@ -16,7 +16,17 @@ const feSiders = [
       },
       {
         text: 'JavaScript',
-        link: '/project/frontEnd/javaScript/index.md',
+        items: [
+          {
+            text: 'js基础',
+            link: '/project/frontEnd/js/index.md',
+          },
+          {
+            text: 'jsDemo',
+            link: '/project/frontEnd/js/index.md',
+          },
+        ]
+   
       }
     ]
   }
