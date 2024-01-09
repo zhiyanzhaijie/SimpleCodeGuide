@@ -23,7 +23,7 @@ const feSiders = [
           },
           {
             text: 'jsDemo',
-            link: '/project/frontEnd/js/index.md',
+            link: '/project/frontEnd/js/demo.md',
           },
         ]
    

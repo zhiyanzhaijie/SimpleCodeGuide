@@ -8,7 +8,7 @@ const devSiders = [
       },
       {
         text: 'Web开发',
-        link: '/project/dev/web'
+        link: '/project/dev/web.md'
       }
     ]
   }
