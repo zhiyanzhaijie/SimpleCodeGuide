@@ -61,10 +61,132 @@ outline: deep
    *  { day: 7 }
    * ]
    */
-   
-   
   ```
-  
+
+- **语法相关（this, 作用域，作用域链）**
+  - `变量起作用的域`
+
+  ```js
+  // 全局作用域你懂了吗？ 不懂请问AI
+  // 下面展示一些局部作用域（函数作用域，块级作用域）
+  {
+    // 这是一个块级作用域
+  }
+
+  if (true) {
+    // 这也是一个块级作用域
+  }
+
+  let a = {
+    // 这不是一个作用域
+  }
+
+  function b() {
+    // 这是一个函数作用域
+  }
+
+  /**
+   * 发现没有，可以编写表达式的地方就存在作用域
+   * 因为作用域就是某个变量（数据）起作用的空间（不严格地说）
+   */
+
+  // 变量与作用域
+  let obj = '第一个名为obj的变量'
+  let obj = '第二个名为obj的变量' // 这会报错，一个作用域内不能有同名变量
+  {
+    let obj = '子作用域的obj变量' // 这不会有问题
+    console.log(obj) // '子作用域的obj变量'
+  }
+  console.log(obj) // '第一个名为obj的变量'
+
+
+  // this - 一个关键字，其值为作用域中的一个对象
+  console.log(this)
+  /**
+   * 全局作用域中this是该js文件的调用者
+   * 若js在浏览器环境中调用, this = window(一个浏览器相关对象)
+   * 若js在node中调用, this = {}(一个空对象)
+   */
+  let a = 1;
+  let b = 1;
+  {
+    let a = 2;
+    // 子作用域的this, 通过作用域链继承自父作用域 
+    console.log(this) // window
+    // 子作用域的变量，优先使用自身，再使用作用域链继承
+    console.log(a, b) 
+    /**
+     * Output: 2, 1;
+     * a -> 2
+     * b -> undefined -(作用域链) -> 1
+     */
+  }
+  ```
+
+  - **this的指向问题(普通函数，箭头函数)**
+
+  ```js
+  this.name = '全局this'
+
+  let dog = { name: '狗' }
+  let cat = { name: '猫' }
+
+  // 声明一个普通函数
+  function fn() {
+    console.log(this.name) // 谁调用这个fn, this就是谁
+  }
+  this.fn() // 或者直接 fn()
+  /**
+  * 调用者： 全局this
+  * output: '全局this'
+  */
+
+  dog.fn = fn // 给dog添加fn属性
+  dog.fn()
+  /**
+  * 调用者： dog
+  * output: '狗'
+  */
+
+  // 同理
+  cat.fn = fn 
+  cat.fn() // '猫'
+
+  /**
+  *  小偷方法：
+  *  Function.prototype.call/bind/apply
+  *  作用： 改变函数的调用者
+  */
+
+  cat.fn.call(dog) 
+  this.fn.call(dog)
+  /**
+  * 用狗调用别人的fn方法
+  * Ouput: '狗'
+  */ 
+
+  // 声明一个箭头函数
+  const arrowFn = () => {
+    // 箭头函数的this永远指向声明时作用域的this
+    console.log(this.name) 
+  }
+
+  // arrowFn声明时，作用域是全局作用域
+  this.fn2 = arrowFn
+  this.fn2() // '全局this'
+  dog.fn2 = arrowFn
+  dog.fn2()  // '全局this'
+  cat.fn2 = arrowFn
+  cat.fn2()  // '全局this'
+
+  this.fn2.call(dog) 
+  /**
+  * 小偷方法对箭头函数无效
+  * 输出: 
+  *  '全局this'
+  */
+  ```
+
 - **js面向对象\[对象，类，原型，原型链\]**
   - **对象**
     - `具象的。作为个体的对象`
@@ -135,58 +257,54 @@ outline: deep
     - `顺藤摸瓜的原型链`
 
     ```js
-    class Animal {
-      constructor(name) {
-        this.name = name;
-      }
-      eat() {
-        console.log(this.name + 'eats')
-      }
-      speak() {
-        console.log(this.name + ' makes a noise.');
-      }
+    let rabbit = {
+      name: '兔子',
+    }
+    console.log(rabbit.run) // 输出： undefined
+    Object.prototype.run = function() {
+      console.log(this.name)
     }
 
-    class Dog extends Animal {
-      constructor(name, breed) {
-        super(name);
-        this.breed = breed;
-      }
-      speak() {
-        console.log(this.name + ' barks.');
-      }
-    }
+    /**
+     * 对任意 class A
+     * 有默认规则: 
+     *
+     * A.prototype = { constructor: A }
+     *
+     * 当然，这个prototype属性的值是可以进行更改的（但不推荐）
+     */
 
-    var a = new Animal('狗')
+    rabbit.run()
+    /**
+     * rabbit没有run, rabbit没有run，但其原型链上游的Object.prototype有
+     * 输出：   
+     *    '兔子'
+     */
 
-    var b = new Dog('狗狗')
-
-    console.log(Animal.prototype, a.__proto__)
-    console.log(b.__proto__, Dog.prototype, Dog.__proto__)
-
-
-    b.eat()
+    // 这里的原型链
+    /**
+     *  rabbit -(__proto__)-> Object.prototype
+     * 
+     *  Object.prototype -(__proto__)-> null(原型链顶点)
+     */
     ```
-  
-- **语法相关（作用域，作用域链）**
-  - `代码起作用的域`
-
-  ```js
-  let a = 1;
-  let b = 2;
-  // let a = 2; 非法
-  console.log(a);
-  {
-    let a = 2; // 不非法
-    console.log(a, b);
-  }
-
-  function c() {
-    console.log(a)
-  }
-  c() // 输出: 1
-
-  ```
 
 - **Dom对象**
-  
+  - document
+
+  ```js
+  // dom操作的核心对象 - document
+  console.dir(document)
+
+  // 创建dom元素
+  document.createElement('div')
+
+  // 查找dom元素
+  document.querySelector('#example')
+  document.querySelectorAll()
+  document.getElementById()
+
+  // 打印dom对象上的方法
+  let dom = document.querySelector("#example")
+  console.dir(dom)
+  ```
