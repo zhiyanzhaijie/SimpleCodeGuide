@@ -307,4 +307,11 @@ outline: deep
   // 打印dom对象上的方法
   let dom = document.querySelector("#example")
   console.dir(dom)
+
+  // 事件监听
+  dom.addEventListener('click', () => {
+    console.log('被点击时做的事')
+  })
   ```
+
+## 开始

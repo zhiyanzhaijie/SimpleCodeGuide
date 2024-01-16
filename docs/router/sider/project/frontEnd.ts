@@ -23,7 +23,17 @@ const feSiders = [
           },
           {
             text: 'jsDemo',
-            link: '/project/frontEnd/js/demo.md',
+            items: [
+              {
+                text:'门槛',
+                link: '/project/frontEnd/js/demo.md',
+              },
+              {
+                text: '练习',
+                link: '/project/frontEnd/js/example.md'
+              }
+            ]
+            
           },
         ]
    
