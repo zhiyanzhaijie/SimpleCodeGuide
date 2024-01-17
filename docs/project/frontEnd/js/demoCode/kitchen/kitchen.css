@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #FFF;
+  color: black;
+  text-align: center;
+}
+
+.kitchen_box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+
+  width: 50%;
+  margin: 0 auto;
+  height: 61.8%;
+  margin-top: 100px;
+  
+  border: 2px solid black;
+}
+
+.kitchen {
+  width: 100%;
+  background-color: rgb(189, 164, 168);
+  color: black;
+  flex: 1;
+}
+
+.action {
+  width: 100%;
+  height: 60px;
+  flex: 0;
+  padding: 20px;
+  background-color: rgb(179, 133, 96);
+}
+
+
+/* 
+  水果css样式
+*/
+
+.banana {
+  background-color: yellow;
+  width: 100px;
+  height: 40px; /* 香蕉的高度 */
+  border-radius: 80%; /* 使其呈圆形 */
+}
+
+.watermelon {
+  background-color: green;
+  width: 100px;
+  height: 100px; /* 西瓜的高度 */
+  border-radius: 50%; /* 使其呈圆形 */
+}
+
+.orange {
+  background-color: orange;
+  width: 20px;
+  height: 20px; /* 橘子的高度 */
+  border-radius: 50%; /* 使其呈圆形 */
+}
+
+.banana,
+.watermelon,
+.orange {
+  cursor: pointer;
+}
+
+
