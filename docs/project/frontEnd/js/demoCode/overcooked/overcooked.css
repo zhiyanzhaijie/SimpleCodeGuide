@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex_btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_btn > button {
+  background-color: none;
+  background: none;
+  outline: none;
+  border: none;
+  
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.flex_btn > button:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  gap: 5px;
+
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.box > div {
+  flex: 1;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* dining */
+.dining {
+  display: flex;
+  flex-direction: column;
+}
+
+.dining .title {
+  font-size: 18px;
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+}
+
+.dining ul.todo {
+  padding: 10px;
+  flex: 1;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+}
+
+.dining .action_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 5px;
+  height: 40px;
+  border-top: 1px solid black;
+}
+
+.dining .action_box input {
+  width: 80%;
+  height: 80%;
+}
+
+.dining .action_box button {
+  background-color: none;
+  background: none;
+  outline: none;
+  border: none;
+  
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.dining .action_box button:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/* kitchen */
+.kitchen {
+
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+  background-color: black;
+}
+
+.kitchen .title {
+  font-size: 18px;
+  font-weight: bolder;
+  border-bottom: 1px solid #fff;
+}
+
+.kitchen ul.done {
+  padding: 10px;
+  flex: 1;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+}
+
+
+/* todo/ done */
+
+ul > li {
+  display: flex;
+}
+
+ul > li > input {}
+
+ul > li > span {
+  width: 100%;
+}

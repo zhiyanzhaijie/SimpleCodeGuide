@@ -7,7 +7,9 @@ outline: deep
 
 ## 猜数游戏
 
-- [x] 代码
+::: details 源代码  
+  [猜数](https://github.com/zhiyanzhaijie/SimpleCodeGuide/tree/main/docs/project/frontEnd/js/demoCode/random)
+:::
 
 ## 胡闹厨房(TODO)
 
