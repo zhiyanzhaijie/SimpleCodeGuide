@@ -10,10 +10,33 @@
 <body>
   <div class="box">
     <div class="left">
-
-      <div class="cat"></div>
+      <button id="left_add">+</button>
     </div>
-    <div class="right"></div>
+    
+    <div class="right">
+      <div class="header">Animal Chat</div>
+      <ul class="chat_list">
+        <li>
+          <div class="avatar"></div>
+          <div class="info">
+            <div class="name">狗狗</div>
+            <div class="say">汪汪</div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="action_box">
+        <div class="avatar" id="avatar"></div>
+        <select id="select">
+          <option value="小白">小白</option>
+        </select>
+        <div class="chat">
+          <input id="sendInput" type="text"></input>
+          <button id="send">Send</button>
+        </div>
+      </div>
+      
+    </div>
   </div>
 </body>
 </html>

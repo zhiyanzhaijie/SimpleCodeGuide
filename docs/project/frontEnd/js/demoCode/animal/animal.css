@@ -11,34 +11,189 @@ ul {
 body {
   width: 100vw;
   height: 100vh;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
+.left {
+  position: relative;
+  flex: 65;
+  height: 100%;
+  box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, .5);
+}
 
-.box {
+.left #left_add {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid black;
+}
+
+.left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-
-  display: flex;
+  background-size:auto;
+  background-image: url("./images/forest.svg");
+  opacity: 0.4; /* 设置伪元素的透明度 */
 }
 
-.left {
-  flex: 6;
-  height: 100%;
-
-  background-color: green;
+.left > .movedom.dog {
+  background-image: url("./images/dog.svg");
+  background-size: contain;
+}
+.left > .movedom.goose {
+  background-image: url("./images/goose.svg");
+  background-size: contain;
 }
 
-
-.left .cat {
-  width: 300px;
-  height: 200px;
-  background-color: red;
-}
 
 .right {
+  flex: 35;
 
-  flex: 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+.right .header {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.right .chat_list {
+  flex: 1;
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.right .chat_list > li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  padding: 10px;
+}
+
+.chat_list > li .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-size: cover;
+}
+
+.right .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+}
+
+.right .info .name {
+  font-size: 12px;
+  color: grey;
+}
+
+.right .info .say {
+  position: relative;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.right .info .say::before {
+  position: absolute;
+  left: -6px;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-right: none;
+  border-bottom: none;
+  transform: rotate(-45deg);
+}
+
+.right .action_box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+
+  color: #fff;
+  height: 100px;
   background-color: black;
+  border-top: 1px solid black;
+}
 
+.right .action_box .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.right .action_box .chat {
+  height: 50%;
+  flex: 1;
+
+  display: flex;
+  gap: 10px;
+}
+
+.right .action_box .chat input {
+  flex: 1;
+  height: 100%;
+  border-radius: 5px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid black;
+}
+.right .action_box .chat button {
+  height: 100%;
+  padding: 0 10px;
+  max-width: 50px;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.right .action_box .chat button:hover {
+  opacity: .6;
+  font-weight: bold;
+}
+
+
+/* 头像 */
+
+.avatar {
+  background-image: url("./images/dog.svg");
+}
+.avatar.dog {
+  background-image: url("./images/dog.svg");
+}
+.avatar.goose {
+  background-image: url("./images/goose.svg");
 }
