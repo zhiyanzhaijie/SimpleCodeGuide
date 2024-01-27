@@ -1,9 +1,6 @@
 let id = 0, activeId = 0
-const ANIMAL_HUCO = {
-
-}
+const ANIMAL_HUCO = {}
 const MOVEDOM_HUCO = {}
-
 const ANIMAL_TYPE = {
   DOG: 'dog',
   GOOSE: 'goose'
@@ -34,7 +31,6 @@ class Animal {
     return this.sayMantra[Math.random() * this.sayMantra.length >> 0] 
   }
 }
-
 
 class AnimalMoveDom extends Animal {
 
@@ -103,7 +99,6 @@ class AnimalMoveDom extends Animal {
   
 }
 
-
 window.onload = () => {
   
   ANIMAL_HUCO[id] = new Animal(id, ANIMAL_TYPE.DOG, '小白', '小白哟', [
@@ -167,8 +162,8 @@ window.onload = () => {
   addChatEvent()
   function addChatEvent() {
     selectDom.addEventListener('change', () => {
-      let id = selectDom.value
-      activeId = id
+      let selectId = selectDom.value
+      activeId = selectId
       asyncActiveId()
     })
   
