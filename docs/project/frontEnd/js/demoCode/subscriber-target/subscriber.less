@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  text-align: center;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    .subscribe {
+      height: 100px;
+    }
+
+    ul.observer {
+      flex: 1;
+
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+
+      > li {
+        width: 25%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        line-height: 79px;
+      }
+      
+    }
+ 
+  }
+}

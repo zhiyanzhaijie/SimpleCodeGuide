@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left {
+  position: relative;
+  flex: 65;
+  height: 100%;
+  box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, .5);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:auto;
+    background-image: url("./images/forest.svg");
+    opacity: 0.4; /* 设置伪元素的透明度 */
+  }
+
+  #left_add {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid black;
+    
+  }
+
+  > .movedom {
+    &.dog {
+      background-image: url("./images/dog.svg");
+      background-size: contain;
+    }
+  
+    &.goose {
+      background-image: url("./images/goose.svg");
+      background-size: contain;
+    }
+  }
+}
+
+
+.right {
+  flex: 35;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid black;
+
+  .header {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  .chat_list {
+    flex: 1;
+  
+    overflow: hidden;
+    overflow-y: auto;
+
+    > li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      text-align: left;
+      padding: 10px;
+
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-size: cover;
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2px;
+
+    .name {
+      font-size: 12px;
+      color: grey;
+    }
+    .say {
+      position: relative;
+      width: 200px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px;
+
+      &::before {
+        position: absolute;
+        left: -6px;
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        border-right: none;
+        border-bottom: none;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .action_box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+  
+    color: #fff;
+    height: 100px;
+    background-color: black;
+    border-top: 1px solid black;
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      background-size: cover;
+      background-color: #fff;
+    }
+
+    .chat {
+      height: 50%;
+      flex: 1;
+    
+      display: flex;
+      gap: 10px;
+
+      input {
+        flex: 1;
+        height: 100%;
+        border-radius: 5px;
+        padding: 0 10px;
+        outline: none;
+        border: 1px solid black;
+      }
+
+      button {
+        height: 100%;
+        padding: 0 10px;
+        max-width: 50px;
+        cursor: pointer;
+        background-color: #fff;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+
+        &:hover {
+          opacity: .6;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+}
+
+
+/* 头像 */
+
+.avatar {
+  background-image: url("./images/dog.svg");
+}
+.avatar.dog {
+  background-image: url("./images/dog.svg");
+}
+.avatar.goose {
+  background-image: url("./images/goose.svg");
+}

@@ -8,7 +8,7 @@ outline: deep
 ## 猜数游戏
 
 ::: details 详情  
-  [源码#猜数](https://github.com/zhiyanzhaijie/SimpleCodeGuide/tree/main/docs/project/frontEnd/js/demoCode/random)
+  [源码#猜数](https://github.com/zhiyanzhaijie/SimpleCodeGuide/tree/main/docs/project/frontEnd/js/demoCode/random)  
   [demo#猜数](https://www.bilibili.com/video/BV11c411k79k?p=4)
 :::
 
@@ -21,6 +21,16 @@ outline: deep
 
 ## 动物森友会
 
-## 吃豆人
+::: details 详情  
+  [源码#动物森友会](https://github.com/zhiyanzhaijie/SimpleCodeGuide/tree/main/docs/project/frontEnd/js/demoCode/animal)  
+  [demo#动物森友会](https://www.bilibili.com/video/BV11c411k79k?p=5)
+:::
 
 ## 发布订阅机
+
+::: details 详情  
+  [源码#节气订阅机](https://github.com/zhiyanzhaijie/SimpleCodeGuide/tree/main/docs/project/frontEnd/js/demoCode/subscribe)  
+  [demo#节气订阅机](https://www.bilibili.com/video/BV11c411k79k?p=6)
+:::
+
+## 移动Dom

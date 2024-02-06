@@ -4,39 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animal</title>
-  <script src="./animal.js"></script>
   <link rel="stylesheet/less" type="text/css" href="animal.less" />
   <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+  <script src="./animal.js"></script>
 </head>
 <body>
-  <div class="box">
-    <div class="left">
-      <button id="left_add">+</button>
-    </div>
-    
-    <div class="right">
-      <div class="header">Animal Chat</div>
-      <ul class="chat_list">
-        <li>
-          <div class="avatar"></div>
-          <div class="info">
+  <div class="chat_box">
+    <div class="title">Animal Chat</div>
+    <div class="chat_content">
+      <ul id="chat_ul">
+        <li class="chat_message">
+          <!-- 聊天内容 -->
+          <div class="avatar dog"></div>
+          <div class="message_main">
             <div class="name">狗狗</div>
-            <div class="say">汪汪</div>
+            <div class="text">汪汪</div>
           </div>
         </li>
       </ul>
-
-      <div class="action_box">
-        <div class="avatar" id="avatar"></div>
+    </div>
+    <div class="action_box">
+      <div class="avatar goose" id="actionAvatar"></div>
+      <div class="action_content">
         <select id="select">
-          <option value="小白">小白</option>
         </select>
-        <div class="chat">
-          <input id="sendInput" type="text"></input>
-          <button id="send">Send</button>
-        </div>
+        <input id="input" type="text">
+        <button id="send">Send</button>
+        <button id="add">+ Animal</button>
       </div>
-      
     </div>
   </div>
 </body>

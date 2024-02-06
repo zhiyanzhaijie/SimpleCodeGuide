@@ -3,7 +3,7 @@ layout: doc
 outline: deep
 ---
 
-# JsDemo篇
+# JsDemo节
 
 ## 自学时间
 
