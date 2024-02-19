@@ -8,30 +8,28 @@ ul {
   list-style: none;
 }
 
-.move_box {
+.drag_box {
   position: relative;
-
   width: 100vw;
   height: 100vh;
-  background-color: rgb(107, 99, 99);
-  overflow: hidden;
 
-  > div.move_dom {
+  .dragItem {
     position: absolute;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border: 3px solid black;
     background-color: black;
-    
+    border-radius: 50%;
     transform: translateX(-50%) translateY(-50%);
 
     &.active {
-      border: 5px solid yellow;
+      border-color: yellow;
+      border-width: 10px;
+      z-index: 99;
     }
 
     &.overlap {
-      border: 5px solid red;
+      border-color: red;
     }
   }
 }
-

@@ -122,7 +122,6 @@ DragItem.prototype.initIDGenerator = () => {
   }
 }
 
-
 DragItem.prototype.IDGenerator = DragItem.prototype.initIDGenerator()
 DragItem.prototype.Instances = {}
 DragItem.prototype.nowId = 0
