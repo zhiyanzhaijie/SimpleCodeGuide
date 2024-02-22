@@ -34,3 +34,8 @@ outline: deep
 :::
 
 ## 移动Dom
+
+::: details 详情  
+  [源码#移动的点](https://github.com/zhiyanzhaijie/SimpleCodeGuide/tree/main/docs/project/frontEnd/js/demoCode/drag)  
+  [demo#移动的点](https://www.bilibili.com/video/BV11c411k79k?p=7)
+:::
