@@ -24,6 +24,10 @@ const projectNav = {
         {
           text: "JavaScript",
           link: "/project/frontEnd/js/index.md"
+        }, 
+        {
+          text: "项目",
+          link: "/project/frontEnd/project/index.md"
         }
       ]
     },

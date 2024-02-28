@@ -75,6 +75,6 @@ outline: deep
 2. 在第一步的基础上，练习它。
   
   > 实现demo
-  在编程中，常见的命令。[jsDemo篇](./demo.md)
+  在编程中，常见的命令。[jsDemo节](./demo.md)
 
 3. 为自己量身定做一个由js实现的工具

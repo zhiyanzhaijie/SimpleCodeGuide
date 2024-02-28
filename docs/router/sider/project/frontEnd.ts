@@ -1,6 +1,6 @@
 const feSiders = [
   {
-    text: '前端（FrontEnd）',
+    text: '前端基础（FrontEnd）',
     items: [
       {
         text: '大纲',
@@ -37,6 +37,19 @@ const feSiders = [
           },
         ]
    
+      }
+    ]
+  }, {
+    text: '前端项目化',
+    items: [
+      {
+        text: '项目',
+        items: [
+          {
+            text: '前置知识',
+            link: '/project/frontEnd/project/index.md'
+          }
+        ]
       }
     ]
   }
