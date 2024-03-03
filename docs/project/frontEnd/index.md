@@ -5,7 +5,7 @@ outline: deep
 # 前端概况
 
   ::: warning 放在开头
-  字典级文档 - [MDN文档](https://developer.mozilla.org/zh-CN/)
+  字典级文档 - [MDN文档](https://developer.mozilla.org/zh-CN/)  
   闯关类教程 - [FreeCodeCamp](https://www.freecodecamp.org/chinese/learn/)
   :::
 
@@ -51,4 +51,4 @@ outline: deep
 
 - **框架开发**
 
-  `solid`.js -> `react`.js -> `vue`.js
+  以`react.js`为例
