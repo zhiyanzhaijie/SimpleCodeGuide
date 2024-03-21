@@ -50,6 +50,15 @@ const feSiders = [
             link: '/project/frontEnd/project/index.md'
           }
         ]
+      },
+      {
+        text: 'React',
+        items: [
+          {
+            text: 'React核心',
+            link: '/project/frontEnd/project/framework/react/index.md'
+          }
+        ]
       }
     ]
   }
